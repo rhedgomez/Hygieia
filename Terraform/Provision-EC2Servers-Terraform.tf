@@ -1,9 +1,8 @@
 provider "aws" {
-  access_key = "AKIAII3INCZPCOVGDITQ"
-  secret_key = "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"
-  region     = "sa-east-1"
+  access_key = "AKIAIFG4DXQRB3K4LU5Q"
+  secret_key = "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"
+  region     = "us-east-2"
 }
-
 resource "aws_security_group" "ssh_and_http" {
   name = "allow_ssh_and_http"
   description = "Allow SSH and HTTP traffic"
