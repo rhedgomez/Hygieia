@@ -72,7 +72,7 @@ node{
     }
 
     stage('RUN THE CONTAINERS'){
-           sh 'docker-compose up'
+        sh '/usr/local/bin/docker-compose up -d' 
     }    
      
      
