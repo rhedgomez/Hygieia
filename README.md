@@ -1,66 +1,49 @@
-<div align="center">
-<img width="250" align="top" src="/UI/src/assets/img/hygieia_b.png"><a href="https://www.blackducksoftware.com/about/news-events/releases/2015-open-source-rookies-year"><img width="55" align="top" hspace="20" src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/Rookies_Award_Badge.png"></a> 
-</div>
-<div align="center"> 
- <p> <b>Pronunciation: <i>hi-gee-ya <a href="https://en.wikipedia.org/wiki/Hygieia"></i>(Origin: Greek)</a> </p>
-</div>
-
-<div align="center">
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/capitalone/Hygieia.svg?branch=master"><img src="https://travis-ci.org/capitalone/Hygieia.svg?branch=master" alt="Build Status"/></a>
-  <!-- Codacy Badge -->
-  <a href="https://www.codacy.com/app/amit-mawkin/Hygieia"><img src="https://api.codacy.com/project/badge/grade/de1a2a557f8e458e9a959be8c2e7fcba"
-      alt="Codacy Badge"/></a>
-  <!-- Maven Central -->
-  <a href="http://search.maven.org/#search%7Cga%7C1%7Ccapitalone"><img src="https://img.shields.io/maven-central/v/com.capitalone.dashboard/Hygieia.svg" alt="Maven Central"/></a>
-  <!-- License -->
-  <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg"
-      alt="License"/></a>
-  <!-- Gitter Chat -->
-  <a href="https://gitter.im/capitalone/Hygieia?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter Chat"/></a>
-</div>
-
-<div align="center">
-  <h2>
-    <a href="http://capitalone.github.io/Hygieia/getting_started.html"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/Buttons/Documentation.png" alt="Documentation" width="125" align="center"></a>
-    <span>|</span>
-    <a href="http://capitalone.github.io/Hygieia/screenshots.html"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/Buttons/Screenshots.png" alt="Screenshots" width="125" align="center"></a>
-    <span>|</span>
-    <a href="http://capitalone.github.io/Hygieia/contribute.html"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/Buttons/Contribute.png" alt="Contribute" width="125" align="center"></a>
-    <span>|</span>
-    <a href="http://capitalone.github.io/Hygieia/contact.html"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/Buttons/Contact.png" alt="Contact" width="125" align="center"></a>
-  </h2>
-</div>
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
- 
-<tbody>
-<tr>
-<td><a href="https://github.com/Hygieia/ExecDashboard"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/ReadmeIcons/Hygieia3.png" alt="Hygieia3.0" height="145" width="940"/></a></td>
-</tr> 
-</tbody> 
-</table>
-
-<table>
-<colgroup>
-<col width="33.3%" />
-<col width="33.3%" />
-<col width="33.4%" />
-</colgroup>
-
-<tbody>
-<tr>
-<td><a href="http://capitalone.github.io/Hygieia/getting_started.html"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/ReadmeIcons/About.png" alt="About Icon" height="145" width="280"/></a></td>
-<td><a href="https://www.youtube.com/watch?v=SoNTA78j0tc"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/ReadmeIcons/Video.png" alt="Video Icon" align="center" height="145" width="280"/></td>
-<td><a href="http://capitalone.github.io/Hygieia/architecture.html"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/ReadmeIcons/Architecture.png" alt="Architecture Icon" align="center" height="145" width="280"/></a></td>
-</tr>
-<tr>
-<td><a href="http://capitalone.github.io/Hygieia/framework.html"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/ReadmeIcons/Framework.png" alt="Framework Icon" align="center" height="145" width="280"/></td>
-<td><a href="http://capitalone.github.io/Hygieia/setup.html"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/ReadmeIcons/Installation.png" alt="Install Icon" align="center" height="145" width="280"/></a></td>
-<td><a href="https://github.com/capitalone/Hygieia/graphs/contributors"><img src="https://github.com/capitalone/Hygieia/blob/gh-pages/media/images/ReadmeIcons/TopContributors.png" alt="Contributors Icon" align="center" height="145" width="280"/></a></td>
-</tr>
-</tbody>
-</table>
+<h1 style="color: #5e9ca0;">Hygieia - A DevOps&nbsp;Dashboard</h1>
+<h2 style="color: #2e6c80;">Essentials:</h2>
+<ul>
+<li>Terraform greater than 0.11.7+(for provisioning AWS EC2 Instances)<br />-current version used: Terraform v0.11.8</li>
+<li>Ansible greater than: 2.7.0+(for configuration management)<br />-current version used: Terraform v0.11.8</li>
+<li>Docker, Docker-Compose, Docker-Swarm<br />-current version used are&nbsp;as follows:v<em>1.13.1, build 092cba3</em>, <em>1.21.2, build a133471,1.21.0, build 5920eb0</em><br /><br /></li>
+</ul>
+<h2 style="color: #2e6c80;">Installation Steps:</h2>
+<ol>
+<li>Fork Capitalone's&nbsp;repo going to your own GitHub repo&nbsp;
+<ul>
+<li><a href="https://github.com/capitalone/Hygieia">https://github.com/capitalone/Hygieia</a></li>
+<li>
+<div>On AWS, click on the link below to follow instructions below(exporting environment variables)</div>
+<ul>
+<li><a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-environment.html">https://docs.aws.amazon.com/cli/latest/userguide/cli-environment.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Generate a key-pair for user authentication
+<ul>
+<li>The simplest way to generate a key pair is to run&nbsp;<strong>ssh-keygen</strong></li>
+<li>Upload it to your AWS region using <strong>Ansible:</strong>
+<ul>
+<li><img src="https://drive.google.com/uc?id=1pOXsxUWTBg7afGFxkgO6gOUAVUpSZpSV" alt="upload-sshkeypair" width="477" height="188" /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Provision AWS instances(2) using Terraform(IaC)&nbsp;
+<ul>
+<li>jenkins_master_server_centos - where jenkins is installed</li>
+<li>swarm_docker_server_centos - where Hygieia App is deployed and also implemented using Docker Swarm(for high availability).</li>
+</ul>
+</li>
+<li>Setup the following Pipelines on Jenkins(in-order)
+<ul>
+<li>GIT SCM CHECKOUT</li>
+<li>MVN PACKAGE &amp; BUILD IMAGE</li>
+<li>PUSH DOCKER IMAGES - TO DOCKER HUB</li>
+<li>RUN THE CONTAINERS<br /><br /></li>
+</ul>
+</li>
+</ol>
+<p><img src="https://drive.google.com/uc?id=190ObQqb7NkejX9DYWcd5VwHFHdsl75WJ" alt="JenkinsFile" width="969" height="534" /></p>
+<p><strong>NOTE:<br /> </strong>To configure your environment, create a&nbsp;docker-compose.override.yml. The most commonly used properties are listed and the uncommented properties are mandatory for the collector to work:</p>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
