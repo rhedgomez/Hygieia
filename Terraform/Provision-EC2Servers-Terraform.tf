@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "ssh_and_http" {
-  name = "allow_ssh_and_http"
+  name = "allow_ssh_and_http_withcmp"
   description = "Allow SSH and HTTP traffic"
 
   ingress {
@@ -37,13 +37,18 @@ resource "aws_security_group" "ssh_and_http" {
   }
 
   ingress {
+    from_port = 8
+    to_port = 0
+    protocol = "icmp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
       from_port = 3000
       to_port = 3000
       protocol = "TCP"
       cidr_blocks = ["0.0.0.0/0"]
   }
-
-
 
   egress {
       from_port = 0
@@ -54,7 +59,7 @@ resource "aws_security_group" "ssh_and_http" {
 }
 
 resource "aws_instance" "jenkins_master_server_centos" {
-  ami           = "ami-4bf3d731"
+  ami           = "ami-0325466f"
   instance_type = "t2.small"
   security_groups = ["${aws_security_group.ssh_and_http.name}"]
   key_name = "RhedsAWSPublickey"
@@ -66,12 +71,12 @@ resource "aws_instance" "jenkins_master_server_centos" {
 }
 
 resource "aws_instance" "swarm_docker_server_centos" {
-  ami           = "ami-4bf3d731"
+  ami           = "ami-0325466f"
   instance_type = "t2.small"
   security_groups = ["${aws_security_group.ssh_and_http.name}"]
   key_name = "RhedsAWSPublickey"
   tags {
-        Name = "swarm_docker_server_centos"
+        Name = "swarm-swarm_docker_server_centos"
         role = "swarm-docker_server"
        }
 
