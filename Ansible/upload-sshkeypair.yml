@@ -1,0 +1,11 @@
+#Upload custom sshkey pair to AWS
+
+- hosts:  localhost
+
+  tasks:
+    - name: Uploading my public Key
+      ec2_key:
+        name: RhedsAWSPublickey
+        region: us-east-1
+        key_material: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCf5VKRNKEmNYD6/LBAgSCDCkQVpkrNvoz+URbWxXMIvYNbMJnD9S5xbBIilO+J2tu64jl4lkVN1eB4hKHr3vz3BZaU38TFGUvr3PVI0GfyH6hIbrpqvu4e0TpaAqOZqOrbuYhE/vThRbcjO610R4Yu61WCoJgS60QMYo0suc2Y4jQnJNz0REXoiCV8LDlPjfJXh26PkSuDFqMWR4UBcJf6EqMjHIs2QjJPjuyupHkzJGXT6cSALkR4pIIL5Mxw6tSIc080Hu8KqBYrgoshp5rH+VRlrnGup0i0f75dASPndM0MVzkBpNrdck1dK0bdn1knN9IlgYzZq7jrfQx92I7n root@awsfun.learn.com'
+        state: present
