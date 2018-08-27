@@ -1,0 +1,14 @@
+--- 
+- hosts: jenkins_centos
+  become: yes
+  become_method: sudo
+  remote_user: centos
+
+  roles:
+  - git
+  - java
+  - ansible-oracle-java
+  - jenkins
+  - maven
+  - nodejs
+  - nginx
